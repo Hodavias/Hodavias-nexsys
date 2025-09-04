@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /*a guarda as cores que você quer usar */
+    --primary-color: #00FFFF;
+    --secondary-color: #2C3E50;
+    --accent-color: #008080;
+    --text-color: #2C3E50;
+    --white-color: #FFFFFF;
+    --border-color: #E9ECEF;
+    --form-text: #FFE4E1;
+}
+
+
+
+body {
+    background: #008080;
+    background: linear-gradient(90deg, rgba(0, 128, 128, 1) 0%, rgba(44, 62, 80, 1) 48%);
+    color: var(--border-color);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    /* personalização do menu da caixa inicial */
+    display: flex;
+    list-style: none;
+    /* o subliinhado que fica enbaixo do link */
+    gap: 3rem;
+    justify-content: center;
+}
+
+.menu-link {
+    /* são os botões e ordenação aonde eles vão ficar */
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+/* after -> depois / before -> antes */
+
+.menu-link::after {
+    /* depois de todos os itens da classe menu */
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    transition: width 0.5s ease;
+    /* a transição de quanto ela iria demorar para fazer */
+
+}
+
+.menu-link:hover::after {
+    /* o hover seve para quando o ouse passar na tela */
+    width: 100%;
+}
+
+.cabeçalho {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.foto-logo {
+    width: 500px;
+    height: 500px;
+    font-weight: bold;
+
+}
+
+.frase-inicio {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 30px;
+
+}
+
+.sobre-titulo {
+    /* Quem somos */
+    font-size: 3rem;
+    color: var(--border-color);
+    font-weight: bold;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.caixa-sobre-min {
+    /* sobre nos */
+    padding: 2rem;
+    max-width: 900px;
+    /* esticar o texto da sua forma */
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--secondary-color);
+    font-size: 1rem;
+    color: var(--form-text);
+    font-weight: bold;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.projetos {
+    padding: 6rem 2rem;
+
+}
+
+.projeto-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-color);
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.projeto-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+}
+
+.projeto-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 128, 128, 1);
+    transform: translateY(-10px) scale(1.05);
+    transition: all  0.5s  ease;
+    cursor: pointer; 
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-imagens {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-projetos {
+margin-bottom: 5px;
+}
+
+.paragrafo-projetos {
+    color: #E9ECEF;
+    line-height: 1.25rem;
+}
+.caixa-texto-projeto{
+    padding: 1.5rem;
+}
+
+
+
+.contato{
+padding: 6rem 2rem ;
+}
+
+.contatos-titulo{
+  text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.formulario-contato{
+ max-width: 600px ;
+ margin:  0 auto;
+  background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+
+}
+.campo-form{
+ width: 100% ;
+ padding: 1rem;
+ background: rgba(0, 0, 0, 0.6);
+ border-radius: 8px;
+ color: var(--border-color);
+ border:1px solid var(--primary-color);
+ 
+ 
+}
+.campo-form:focus{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(15, 23, 42, 0.8);
+}
+.grupo-form{
+ margin-bottom: 1.5rem;
+
+}
+.botao-form{
+    color: var(--form-text);
+    background: #008080;
+    background: linear-gradient(90deg, rgba(0, 128, 128, 1) 0%, rgba(44, 62, 80, 1) 48%);
+    padding:  1rem 2rem ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.botao-form:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px  rgba(15, 23, 42, 0.8);
+}

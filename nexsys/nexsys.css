@@ -151,7 +151,7 @@ body {
 
 .projeto-card:hover {
     box-shadow: 0 10px 20px rgba(0, 128, 128, 1);
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-10px) scale(1.05); /* aumenta o tamanho do card */
     transition: all  0.5s  ease;
     cursor: pointer; 
 }
@@ -165,9 +165,9 @@ body {
 }
 
 .projetos-imagens {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+    height: 200px; /* altura da imagem */
+    width: 100%;  /* largura da imagem */
+    object-fit: cover; 
 }
 
 .info-projetos {
@@ -238,4 +238,16 @@ padding: 6rem 2rem ;
 .botao-form:hover{
     transform: translateY(-4px);
     box-shadow: 0 5px 15px  rgba(15, 23, 42, 0.8);
+}
+
+.frase-final{
+    text-align: center; /* a centralização do tezto */ 
+
+    padding: 2rem; /* ele é o espaçamento que fica em volta do texto */
+
+    font-size: 1rem; /* o tamanho da fonte do texto */ 
+
+    color: var(--border-color); /* a cor do texto */ 
+
+    font-weight: bold; /* o peso que a fonte tem sobre o texto */
 }

@@ -2,11 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+   opacity: 0; /* escondido inicialmente */
+      transform: translateY(20px); /* deslocado para baixo */
+      animation: fadeInUp 0.6s ease-out forwards; /* animação para pegar a posição final */
+      animation-delay: var(--delay, 0s); /* atraso para criar sequência */
+       will-change: transform, opacity;
 }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+@media (prefers-reduced-motion: reduce) {
+      .entry {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 :root {
@@ -24,7 +44,7 @@ html {
 
 body {
     background: #008080;
-    background: linear-gradient(90deg, rgba(0, 128, 128, 1) 0%, rgba(44, 62, 80, 1) 48%);
+   background: #E9E9E9;
     color: var(--border-color);
 }
 
@@ -90,6 +110,7 @@ body {
     width: 500px;
     height: 500px;
     font-weight: bold;
+    margin-top: 100px;
 
 }
 
@@ -103,7 +124,7 @@ body {
 .sobre-titulo {
     /* Quem somos */
     font-size: 3rem;
-    color: var(--border-color);
+    color: var(--accent-color);
     font-weight: bold;
     padding: 6rem 2rem;
     display: flex;
@@ -125,8 +146,24 @@ body {
     background: rgba(15, 23, 42, 0.8);
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+     
+     
 
 }
+
+.caixa-sobre-min:hover {
+    box-shadow: 0 10px 20px rgb(2, 43, 43);
+    transform: translateY(-10px) scale(1.05); /* aumenta o tamanho do card */
+    transition: all  0.5s  ease;
+    cursor: pointer; 
+}
+.caixa-sobre-min:not(:hover) {
+   
+      transition: transform 0.5s ease-in; /* mais lento ao voltar */
+ transition:  0.4s ease; /* suavidade no hover */
+    }
 
 .projetos {
     padding: 6rem 2rem;
@@ -155,6 +192,13 @@ body {
     transition: all  0.5s  ease;
     cursor: pointer; 
 }
+
+.projeto-card:not(:hover) {
+   
+      transition: transform 0.5s ease-in; /* mais lento ao voltar */
+ transition:  0.4s ease; /* suavidade no hover */
+    }
+
 
 .projetos-caixa {
     display: grid;

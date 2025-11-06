@@ -1,0 +1,110 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    margin: 44px 0px 144px 76px;
+    display: flex;
+
+
+}
+
+.link-header {
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    padding: 1rem;
+    cursor: pointer;
+    
+
+
+}
+@media screen and (max-width: 600px) and (orientation: landscape) and (orientation: portrait) {
+    /* esse media serve para a responsividade para que quando bataer com mais ou pra menos de 600 px ele mude de forma ou de formatação 
+    assim colocando e modificando o texto */
+/* essas orientações servem para quando vc for aplicar em diferentes formatações do seu computador assim deixando o site mais confortavel */
+
+}
+
+.botao-login {
+    background: #665AE1;
+    border-radius: 20.5px;
+    width: 150px;
+    height: 42px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+
+.logo-image {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block;
+
+}
+
+div {
+    display: inline-block;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px; 
+    color: #515151;
+}
+
+
+h2 {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #989D9C;
+}
+
+p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.textos {
+    padding: 86px;
+}
+
+.botao-2 {
+    background: #ADFF00;
+    border-radius: 30px;
+    width: 239px;
+    height: 64px;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 32px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.botao-2:hover {
+    background-color: #89c900;
+    transition: 0.5s;
+    transform: scale(1.1);
+
+
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif ;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.navegacao{
+   display: inline-block ;
+   justify-items: end;
+  width: 40%;
+   background-color: rgba(93, 93, 125, 0.16) ;
+   height: 100vh;
+   position: absolute ;
+  
+   
+}
+.conteudo{
+    display: inline-block;
+     width: 60%;
+}
+

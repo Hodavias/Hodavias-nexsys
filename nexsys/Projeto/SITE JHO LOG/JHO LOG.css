@@ -1,0 +1,140 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF0000;
+    --secundary-color: #000000;
+    --background-color: #FFFFFF;
+}
+
+nav{
+    margin-top: 30px;
+display: flex;
+justify-content: center;
+margin-top: 32px;
+   
+
+}
+.imagem-topo{display: flex;
+    justify-content: center;
+
+}
+.menu-link{
+       
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    margin: 20px;
+    color: var(--secundary-color);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 29px;
+    cursor: pointer;
+    text-align: center;
+    background-position: center -100%;
+   
+}
+.menu-link:hover {
+
+    background: var(--primary-color);
+ transition: 0.5s;
+    transform: scale(1.1);
+    background-position: center -100%;
+}
+
+
+main{
+    padding: 200px;
+    
+}
+
+
+.projetos {
+    padding: 6rem 2rem;
+
+}
+
+.projeto-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-color);
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.projeto-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+
+}
+
+.projeto-card:hover {
+    box-shadow: 0 10px 20px rgb(151, 3, 3);
+    transform: translateY(-10px) scale(1.05); /* aumenta o tamanho do card */
+    transition: all  0.5s  ease;
+    cursor: pointer; 
+}
+
+.projeto-card:not(:hover) {
+   
+      transition: transform 0.5s ease-in; /* mais lento ao voltar */
+ transition:  0.4s ease; /* suavidade no hover */
+    }
+
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-imagens {
+    height: 200px; /* altura da imagem */
+    width: 100%;  /* largura da imagem */
+    object-fit: cover; 
+}
+
+.info-projetos {
+margin-bottom: 5px;
+}
+
+.paragrafo-projetos {
+    color: #E9ECEF;
+    line-height: 1.25rem;
+}
+.projeto-texto{
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

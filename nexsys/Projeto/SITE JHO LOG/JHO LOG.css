@@ -16,13 +16,14 @@ nav{
 display: flex;
 justify-content: center;
 margin-top: 32px;
-   
+   margin-bottom: 100px;
 
 }
 .imagem-topo{display: flex;
     justify-content: center;
 
 }
+
 .menu-link{
        
     border-radius: 10px;
@@ -37,6 +38,7 @@ margin-top: 32px;
     cursor: pointer;
     text-align: center;
     background-position: center -100%;
+margin-bottom: 100px;
    
 }
 .menu-link:hover {
@@ -52,6 +54,30 @@ main{
     padding: 200px;
     
 }
+.cabeçalho{
+   padding: 2rem;
+    max-width: 900px;/*  largura máxima da caixa */
+    /* esticar o texto da sua forma */
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--secondary-color);
+    font-size: 1rem;
+    color: var(--form-text);
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.sobre{
+     padding-top: 2rem;
+   font-size: 1rem;
+     max-width: 900px;/*  largura máxima da caixa */
+    /* esticar o texto da sua forma */
+    margin: 0 auto;
+    border-radius: 16px;
+    height: 60%;
+}
 
 
 .projetos {
@@ -60,12 +86,13 @@ main{
 }
 
 .projeto-card {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.952);
     border-radius: 16px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     border: 1px solid var(--secondary-color);
     margin: 2rem;
     overflow: hidden;
+    
 }
 
 .projeto-titulo {
@@ -108,7 +135,7 @@ margin-bottom: 5px;
 }
 
 .paragrafo-projetos {
-    color: #E9ECEF;
+    color: #000000;
     line-height: 1.25rem;
 }
 .projeto-texto{

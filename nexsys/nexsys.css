@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /* alinha os itens na vertical */
 
 
 }
@@ -135,7 +135,7 @@ body {
 .caixa-sobre-min {
     /* sobre nos */
     padding: 2rem;
-    max-width: 900px;
+    max-width: 900px;/*  largura máxima da caixa */
     /* esticar o texto da sua forma */
     margin: 0 auto;
     border-radius: 16px;

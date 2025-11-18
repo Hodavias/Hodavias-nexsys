@@ -83,3 +83,46 @@ text-decoration: none;
 .textos {
     padding: 86px;
 }
+
+@media screen and (max-width: 700px){
+ .menu{
+    display: none;
+}
+
+header {
+    position: fixed;
+    right: 81px;
+
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.logo-image{
+    width: 312px;
+    height: 288px;
+  margin-left: 90px;
+        margin-top: 79px;
+
+}
+.textos{
+    padding: 0;
+    margin: auto;
+    margin-top: 50%;
+     justify-content: center;  /* centraliza horizontal */
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 49px;
+    text-align: center;
+    line-height: 62px
+}
+p{
+    line-height: 43px;
+    text-align: center;
+    font-size: 18px;
+}
+
+}

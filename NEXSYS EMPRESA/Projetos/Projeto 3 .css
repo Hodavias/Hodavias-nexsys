@@ -105,6 +105,10 @@ header{
 }
 
 
+.botoes{
+    margin-top: 15%;
+}
+
 @media screen and (max-width: 900px ) {
     
 .container-left{
@@ -130,6 +134,7 @@ margin: 54px;
 
 .botoes {
 display: none;
+margin-top: 10px;
 }
 
 h2{

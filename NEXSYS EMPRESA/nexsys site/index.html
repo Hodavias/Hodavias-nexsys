@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="nexsys.css">
-        <link rel="shortcut icon" href="imagens/icone.png">
+    <link rel="shortcut icon" href="imagens/icone.png">
     <title>Nexsys</title>
 </head>
 
@@ -35,8 +37,7 @@
 
     </nav>
     <main id="inicio" class="cabeçalho"> <!--aonde ficara a parte principal do texto -->
-        <img src="imagens/Logo geral.jpg" alt="foto da logo da nexsys"
-            class="foto-logo">
+        <img src="imagens/Logo geral.jpg" alt="foto da logo da nexsys" class="foto-logo">
 
         <p class="frase-inicio">Automatize. Evolua. Domine </p>
 
@@ -66,7 +67,8 @@
             </div>
 
             <div class="projeto-card">
-                <img src="imagens/travel-time-travel-agency-wordpress-theme-1024x834.jpg" alt="projetos-imagens" class="projetos-imagens">
+                <img src="imagens/travel-time-travel-agency-wordpress-theme-1024x834.jpg" alt="projetos-imagens"
+                    class="projetos-imagens">
 
                 <div class="caixa-texto-projeto">
                     <h3 class="info-projetos">Pagina de Viagens </h3>
@@ -80,13 +82,41 @@
                 <img src="imagens/Design sem nome.png" alt="projetos-imagens" class="projetos-imagens">
 
                 <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos"> JHO LOG  </h3>
-                    <p class="paragrafo-projetos"> Um site de logistica, morderno, atual para seus participantes da empresa JHO LOG Uma empresa de 
-                        logistica, disposta a atender seus clientes 
+                    <h3 class="info-projetos"> JHO LOG </h3>
+                    <p class="paragrafo-projetos"> Um site de logistica, morderno, atual para seus participantes da
+                        empresa JHO LOG Uma empresa de
+                        logistica, disposta a atender seus clientes
                     </p>
                 </div>
             </div>
         </div>
+
+        <div class="projeto-card">
+            <img src="imagens/travel-time-travel-agency-wordpress-theme-1024x834.jpg" alt="projetos-imagens"
+                class="projetos-imagens">
+
+            <div class="caixa-texto-projeto">
+                <h3 class="info-projetos">Pagina de Viagens </h3>
+                <p class="paragrafo-projetos">Uma página de viagens interativo com roteiros de viagem mais cobiçados
+                    do
+                    mundo </p>
+            </div>
+        </div>
+
+        <div class="projeto-card">
+            <img src="imagens/Design sem nome.png" alt="projetos-imagens" class="projetos-imagens">
+
+            <div class="caixa-texto-projeto">
+                <h3 class="info-projetos"> JHO LOG </h3>
+                <p class="paragrafo-projetos"> Um site de logistica, morderno, atual para seus participantes da empresa
+                    JHO LOG Uma empresa de
+                    logistica, disposta a atender seus clientes
+                </p>
+            </div>
+        </div>
+        </div>
+
+
 
     </section>
 
@@ -107,24 +137,24 @@
     </div>
     <script>
         function enviarWhats(event) {
-           event.preventDefault()
+            event.preventDefault()
 
             const nome = document.getElementById('nome').value;
             const mensagem = document.getElementById('mensagem').value;
             const telefone = '5591982991931'
 
             const texto = `Olá ! Me chamo ${nome}, ${mensagem}`
-            const msgFormatada = encodeURIComponent(texto) 
+            const msgFormatada = encodeURIComponent(texto)
             const url = `https://wa.me/${telefone}?text=${msgFormatada}`
 
-            console. log(url)
+            console.log(url)
             window.open(url, '_blank')
         }
 
 
 
     </script>
-    <h1 class="frase-final"> O mercado não para, e você vai parar de se atualizar ?   </h1>
+    <h1 class="frase-final"> O mercado não para, e você vai parar de se atualizar ? </h1>
 </body>
 
 </html>

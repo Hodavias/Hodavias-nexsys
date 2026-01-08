@@ -295,3 +295,47 @@ padding: 6rem 2rem ;
 
     font-weight: bold; /* o peso que a fonte tem sobre o texto */
 }
+
+
+@media screen and (max-width: 700px) {
+   
+.navegacao{
+    width: 114%;
+
+}
+
+.foto-logo{
+    position: relative;
+    left: 14px;
+}
+
+.frase-inicio{
+    text-align: center;
+    position: relative;
+        left: 22px;
+}
+
+.caixa-sobre-min {
+    position: relative;
+    left: 28px; 
+}
+
+
+.formulario-contato{
+    position: relative;
+    left: 26px;
+
+}
+.projetos-caixa{
+    position: relative;
+    left: 24px;
+
+}
+
+.sobre-titulo{
+    position: relative;
+    left: 19px;
+
+}
+
+}

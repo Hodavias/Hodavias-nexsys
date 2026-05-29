@@ -6,6 +6,10 @@
 
 }
 
+body{
+   color: #F5FFFA
+}
+
 header {
     margin: 44px 0px 144px 76px;
     display: flex;
@@ -16,7 +20,7 @@ header {
 .link-header {
 
     font-weight: 600;
-    font-size: 24px;
+ font-size: 20px;
     line-height: 29px;
     color: #989D9C;
     padding: 1rem;
@@ -25,6 +29,101 @@ header {
 
 
 }
+
+
+
+img{
+    width: 475px;
+    height: 397px;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+
+
+
+
+.projetos {
+    padding: 6rem 2rem;
+
+}
+
+.projeto-card {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-color);
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.projeto-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #4a1355;
+
+}
+
+.projeto-card:hover {
+    box-shadow: 0 10px 20px rgb(0, 128, 0);
+    transform: translateY(-10px) scale(1.05); /* aumenta o tamanho do card */
+    transition: all  0.5s  ease;
+    cursor: pointer; 
+}
+
+.projeto-card:not(:hover) {
+   
+      transition: transform 0.5s ease-in; /* mais lento ao voltar */
+ transition:  0.4s ease; /* suavidade no hover */
+    }
+
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-imagens {
+    height: 200px; /* altura da imagem */
+    width: 100%;  /* largura da imagem */
+    object-fit: cover; 
+}
+
+.info-projetos {
+margin-bottom: 5px;
+}
+
+.paragrafo-projetos {
+    color: #000000;
+    line-height: 1.25rem;
+}
+.caixa-texto-projeto{
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) and (orientation: landscape) and (orientation: portrait) {
     /* esse media serve para a responsividade para que quando bataer com mais ou pra menos de 600 px ele mude de forma ou de formatação 
     assim colocando e modificando o texto */
@@ -60,7 +159,7 @@ div {
 
 h1 {
     font-weight: 900;
-    font-size: 100px;
+    font-size: 46px;
     line-height: 122px; 
     color: #515151;
 }
@@ -68,7 +167,7 @@ h1 {
 
 h2 {
     font-weight: 800;
-    font-size: 50px;
+    font-size: 36px;
     line-height: 50px;
     color: #989D9C;
 }

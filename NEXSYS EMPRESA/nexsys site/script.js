@@ -24,10 +24,16 @@ botaoMenu.addEventListener('click', () => {
 botaoMenu.classList.toggle('ativo')
 conteudo.classList.toggle('ativo')
 
+
 })
 
 menuLateral.addEventListener('click', () => {
    menuLateral.classList.remove('ativo')
 botaoMenu.classList.remove('ativo')
 conteudo.classList.remove('ativo')
+
 })
+
+
+
+

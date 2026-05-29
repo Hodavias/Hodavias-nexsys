@@ -44,10 +44,10 @@ html {
 
 
 body {
-    background: #008080;
-   background: #E9E9E9;
     color: var(--border-color);
     transition: 1.0s ease;
+ background: #22b8c3;
+background: rgba(1, 0, 31, 1);
 }
 
 
@@ -57,7 +57,7 @@ body {
     top: 0;
    width: 194px;
   height: 100vh;
-    background-color: rgba(15, 23, 42, 0.918);
+    background-color: rgba(255, 255, 255, 0.2);
     z-index: 5;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     font-size: 20px;
@@ -104,7 +104,7 @@ body {
 
 .button-menu.ativo{
    left: 208px;
-   background-color: var(--primary-color);
+   background-color: rgba(255, 255, 255, 0.2);
    color: var(--secondary-color);
 
 }
@@ -139,8 +139,8 @@ body {
 .menu-link {
     /* são os botões e ordenação aonde eles vão ficar */
     text-decoration: none;
-    color: var(--accent-color);
-    font-weight: 500;
+    color: #17c6dd;
+    font-weight: 600;
     position: relative;
     padding: 0.5rem 0;
 }
@@ -176,16 +176,18 @@ body {
 }
 
 .foto-logo {
-    width: 500px;
-    height: 500px;
+  width: 1400px;
+  height: 700px;
     font-weight: bold;
   margin-top: -50px;
-
+object-fit: cover;
 }
 
 .frase-inicio {
-    font-weight: bold;
-    color: var(--primary-color);
+    font-weight: 400 ;
+     background: -webkit-linear-gradient(#eee, #1CC6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 30px;
 
 }
@@ -193,11 +195,14 @@ body {
 .sobre-titulo {
     /* Quem somos */
     font-size: 3rem;
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(#eee, #023cfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-weight: bold;
     padding: 6rem 2rem;
     display: flex;
     justify-content: center;
+    font-weight: 500;
 
 }
 
@@ -212,7 +217,7 @@ body {
     font-size: 1rem;
     color: var(--form-text);
     font-weight: bold;
-    background: rgba(15, 23, 42, 0.8);
+   
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -252,6 +257,10 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
+        background: -webkit-linear-gradient( #1CC6D4, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-weight: 600;
 
 }
 
@@ -271,7 +280,7 @@ body {
 
 .projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -368,7 +377,13 @@ padding: 6rem 2rem ;
 
 
 @media screen and (max-width: 700px) {
-   
+  
+    html,body{
+        margin: 0;
+    overflow-x: hidden;
+    }
+
+
 .navegacao{
     width: 118%;
 
@@ -377,24 +392,44 @@ padding: 6rem 2rem ;
     height: 32%;
 }
 
+.conteudo{
+
+}
+
 .conteudo.ativo{
     margin-left: 0px;
    
 }
 .foto-logo{
     position: relative;
-    left: 14px;
+    left: 17px;
+    content: url(imagens/Design\ sem\ nome\ \(3\).png);
+width: 300px;
+height: 300px;
+margin: 40% auto;
 }
 
 .frase-inicio{
     text-align: center;
     position: relative;
-        left: 22px;
+        left: 6px;
+        font-size:1rem;
 }
-
 .caixa-sobre-min {
     position: relative;
-    left: 28px; 
+    left: 6px; 
+    font-size: 1.1rem;
+    padding: 2rem 2rem;
+    width: 80%;
+}
+.sobre-paragrafo{
+    font-size: 0.9rem;
+}
+
+/* Projetos */
+.projeto-titulo{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 
@@ -403,10 +438,12 @@ padding: 6rem 2rem ;
     left: 26px;
 
 }
-.projetos-caixa{
-    position: relative;
-    left: 24px;
+.projetos{
+    align-items: center;
+}
 
+.projeto-card{
+    width: 60%;
 }
 
 .sobre-titulo{
@@ -414,6 +451,33 @@ padding: 6rem 2rem ;
     left: 19px;
     font-size: 32px;
 
+}
+
+.contatos-titulo{
+   text-align: start;
+   line-height: 1.5 ;
+   font-size: 1.5rem;
+   padding: 0 2rem;
+}
+
+
+.formulario-contato{
+    width: 90%;
+align-items: center;
+left:0;
+}
+
+.campo-form{
+    width: 90%;
+}
+
+.grupo-form textarea{
+    width: 90%;
+    height: 100px;
+}
+
+.menu.ativo{
+height: 354px;
 }
 
 }

@@ -51,6 +51,7 @@ background: rgba(1, 0, 31, 1);
 }
 
 
+
 .menu{
    position: fixed;
    left: -300px;
@@ -403,7 +404,7 @@ padding: 6rem 2rem ;
 .foto-logo{
     position: relative;
     left: 17px;
-    content: url(imagens/Design\ sem\ nome\ \(3\).png);
+    content: url(imagens/Design\ sem\ nome\ \(4\).png);
 width: 300px;
 height: 300px;
 margin: 40% auto;
